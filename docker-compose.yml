@@ -2,25 +2,25 @@
 version: "3.8"
 services:
   movies:
-    image: radhikasn458/movies:latest
+    image: sairam305/movies:latest
     ports:
       - 81:80
     deploy:
       replicas: 3
   train:
-    image: radhikasn458/train:latest
+    image: sairam305/train:latest
     ports:
       - 82:80
     deploy:
       replicas: 3
   dth:
-    image: radhikasn458/dth:latest
+    image: sairam305/recharge:latest
     ports:
       - 83:80
     deploy:
       replicas: 3
   recharge:
-    image: radhikasn458/recharge:latest
+    image: sairam305/dth:latest
     ports:
       - 84:80
     deploy:
